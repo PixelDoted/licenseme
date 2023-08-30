@@ -1,0 +1,23 @@
+[package]
+name = "licenseme"
+version = "0.1.0"
+edition = "2021"
+authors = ["PixelDoted"]
+description = "License your project from the terminal"
+license = "MIT"
+readme = "README.md"
+keywords = ["cli"]
+categories = ["Command line utilities"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.75"
+chrono = "0.4.27"
+clap = { version = "4.4.1", features = ["derive"] }
+crossterm = "0.27.0"
+home = "0.5.5"
+ratatui = "0.23.0"
+reqwest = { version = "0.11.20", features = ["blocking", "json"] }
+serde = { version = "1.0.188", features = ["derive"] }
+serde_json = "1.0.105"
